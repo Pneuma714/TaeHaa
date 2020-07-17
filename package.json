@@ -4,8 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "node .",
-    "test": "node . 8080"
+    "start": "node main.js",
+    "test": "node debug.js"
   },
   "repository": {
     "type": "git",
