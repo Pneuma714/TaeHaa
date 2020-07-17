@@ -41,4 +41,19 @@ function create() {
 }
 
 function update() {
+    cursors = this.input.keyboard.createCursorKeys();
+
+    if (cursors.left.isDown) {
+        player.setVelocityX(-160);
+    }
+    else if (cursors.right.isDown) {
+        player.setVelocityX(160);
+    }
+    else {
+        player.setVelocityX(0);
+    }
+
+    if (cursors.up.isDown && player.body.touching.down) {
+        player.setVelocityY(-330);
+    }
 }
