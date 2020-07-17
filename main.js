@@ -9,4 +9,4 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.listen(process.env.PORT);
+app.listen(process.argv[0] ? 8080 : process.env.PORT);
