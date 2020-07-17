@@ -1,3 +1,4 @@
+run = () => {
 const config = {
     type: Phaser.AUTO,
     width: 800,
@@ -36,3 +37,8 @@ function create() {
 function update() {
 
 }
+}
+
+run();
+run()
+run()
