@@ -33,8 +33,8 @@ function preload() {
 function create() {
     player = this.physics.add.sprite(100, 450, 'player');
     platforms = this.physics.add.staticGroup();
-    platforms.create(500, 100, 'block');
-    platforms.create(400, 300, 'block');
+    platforms.create(100, 550, 'block');
+    platforms.create(200, 400, 'block');
 
     player.setBounce(0.2);
     player.setCollideWorldBounds(true);
