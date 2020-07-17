@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Pneuma714/taehaa/issues"
   },
-  "homepage": "https://github.com/Pneuma714/taehaa#readme"
+  "homepage": "https://github.com/Pneuma714/taehaa#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
