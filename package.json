@@ -1,0 +1,19 @@
+{
+  "name": "taehaa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pneuma714/taehaa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pneuma714/taehaa/issues"
+  },
+  "homepage": "https://github.com/Pneuma714/taehaa#readme"
+}
