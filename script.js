@@ -34,7 +34,9 @@ function create() {
     player = this.physics.add.sprite(100, 450, 'player');
     platforms = this.physics.add.staticGroup();
     platforms.create(100, 550, 'block');
-    platforms.create(200, 400, 'block');
+    platforms.create(200, 450, 'block');
+    platforms.create(300, 350, 'block');
+    platforms.create(400, 250, 'block');
 
     player.setBounce(0.2);
     player.setCollideWorldBounds(true);
@@ -46,16 +48,15 @@ function update() {
     cursors = this.input.keyboard.createCursorKeys();
 
     if (cursors.left.isDown) {
-        player.setVelocityX(-160);
+        player.body.velocity.x += -50;
     }
     else if (cursors.right.isDown) {
-        player.setVelocityX(160);
-    }
-    else {
-        player.setVelocityX(0);
+        player.body.velocity.x += 50;
     }
 
     if (cursors.up.isDown && player.body.touching.down) {
-        player.setVelocityY(-330);
+        player.setVelocityY(-500);
     }
+
+    player.body.velocity.x *= 0.9
 }
