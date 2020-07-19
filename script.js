@@ -54,7 +54,7 @@ let map = {
         [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
         [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
     ],
-}
+};
 
 let player;
 let cursors;
@@ -76,8 +76,7 @@ function create() {
         }
     }
 
-    // player.body.setGravityY(300);
-    platforms.body.setGravityY(-300);
+    player.body.setGravityY(300);
     this.physics.add.collider(player, platforms);
 }
 
@@ -92,9 +91,8 @@ function update() {
     }
 
     if (cursors.up.isDown && player.body.touching.down) {
-        // player.setVelocityY(-500);
-        platforms.setVelocityY(500);
+        player.setVelocityY(-500);
     }
 
-    player.body.velocity.x *= 0.9
+    player.body.velocity.x *= 0.9;
 }
